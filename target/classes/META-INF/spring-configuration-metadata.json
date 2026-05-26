@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "custom.auth.jwt",
+      "type": "io.brlrlr.lib.auth.properties.JwtProperties",
+      "sourceType": "io.brlrlr.lib.auth.properties.JwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "custom.auth.jwt.access-token-expiration-ms",
+      "type": "java.lang.Long",
+      "sourceType": "io.brlrlr.lib.auth.properties.JwtProperties",
+      "defaultValue": 600000
+    },
+    {
+      "name": "custom.auth.jwt.refresh-token-expiration-ms",
+      "type": "java.lang.Long",
+      "sourceType": "io.brlrlr.lib.auth.properties.JwtProperties",
+      "defaultValue": 604800000
+    },
+    {
+      "name": "custom.auth.jwt.required-claims",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "io.brlrlr.lib.auth.properties.JwtProperties"
+    },
+    {
+      "name": "custom.auth.jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "io.brlrlr.lib.auth.properties.JwtProperties"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

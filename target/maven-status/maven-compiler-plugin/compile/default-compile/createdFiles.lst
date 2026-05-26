@@ -1,0 +1,4 @@
+META-INF/spring-configuration-metadata.json
+io/brlrlr/lib/auth/service/TokenProvider.class
+io/brlrlr/lib/auth/properties/JwtProperties.class
+io/brlrlr/lib/auth/config/AuthAutoConfiguration.class
