@@ -1,0 +1,28 @@
+name: Publish Package on Release Tag
+
+on:
+  release:
+    types: [published] # Triggers only when you click "Publish Release" on GitHub
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Build and Deploy to GitHub Packages
+        # Maven will natively deploy using the exact version defined in your pom.xml
+        run: mvn --batch-mode deploy -DskipTests
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
