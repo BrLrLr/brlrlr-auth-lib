@@ -55,7 +55,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub Packages</name>
-			<url>https://github.com/BrLrLr/brlrlr-auth-lib</url>
+			<url>https://maven.pkg.github.com/BrLrLr/brlrlr-auth-lib</url>
 		</repository>
 	</distributionManagement>
 </project>
